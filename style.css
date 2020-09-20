@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Parisienne";
+  src: url(./stylesheet/Parisienne-Regular.ttf);
+}
+
+:root {
+  --green: #04c17d;
+  --green-hover: #049963;
+  --green-focus: #03774d;
+}
+
+* {
+  font-family: "Roboto", "Arial", "Sans-serif";
+}
+body {
+  background: #f3f3f3;
+  color: #1a1a1a;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+nav .logo {
+  height: 70px;
+}
+nav .menu > a {
+  color: #1a1a1a;
+  padding: 10px;
+}
+
+nav .menu > a:hover,
+nav .menu > a.active {
+  font-weight: 700;
+  border-bottom: 1px solid var(--green);
+}
+nav .menu > a:last-child {
+  margin-left: 11px;
+}
+
+section.header {
+  min-height: 160px;
+
+  background-image: url(./assets/img_oracao.jpg);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.header .header-overdark {
+  min-height: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .box-title {
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 8px 17px;
+  color: #fff;
+}
+.header h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 2.5em;
+}
+
+.main {
+  margin: 0px 10px;
+}
+
+.content {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.divisor {
+  border-top: 2px solid #dadada;
+}
+.height-20 {
+  height: 20px;
+}
+
+.div-formas_ofertar .div-forma {
+  margin-top: 20px;
+}
+.div-formas_ofertar .div-forma h3 {
+  font-size: 1.625em;
+  font-weight: 600;
+  margin-block-start: 0;
+  margin-block-end: 6px;
+}
+.div-formas_ofertar .div-forma span {
+  text-align: justify;
+}
+.div-forma-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-ofertar {
+  padding: 15px 25px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: var(--green);
+  box-shadow: 2px 2px 4px rgba(9, 87, 63, 0.568);
+  font-weight: 500;
+  font-size: 1.15em;
+}
+.btn-ofertar:hover,
+.btn-ofertar:focus {
+  background-color: var(--green-hover);
+}
+
+.btn-ofertar:active {
+  background-color: var(--green-focus);
+}
+
+.forma-2 .div-forma-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.forma-2 .div-forma-content div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+.forma-2 .div-forma-content div span {
+  margin-top: 10px;
+}
+
+.forma-2 .div-forma-content div:first-child {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.forma-2 .div-forma-content div:last-child {
+  font-weight: 500;
+  align-items: flex-start;
+}
+
+.btn_copy {
+  font-size: 0.7em;
+  margin-top: -1px;
+  cursor: pointer;
+  color: var(--green-focus);
+}
+
+.div-versiculo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.div-versiculo .versiculo-verso {
+  font-family: "Parisienne";
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.div-versiculo .versiculo-ref {
+  margin-top: 10px;
+  font-family: "Parisienne";
+  font-size: 1em;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 50px;
+  min-height: 70px;
+  background-color: #272727;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
