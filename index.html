@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-68656203-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-68656203-3");
+    </script>
+
     <title>IBCL - Ofertas e Dízimos</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -47,13 +63,14 @@
                 débito.</span
               >
               <div class="height-20"></div>
-              <div class="div-forma-content">
+              <div class="div-forma-content forma-online">
                 <a
                   class="btn-ofertar"
                   href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AFDMSF7S23D9U&source=url"
                   target="_blank"
                   >OFERTAR ONLINE</a
                 >
+                <img src="assets/paypal.png" alt="Logo Paypal" height="40" />
               </div>
               <div class="height-20"></div>
             </div>
@@ -65,45 +82,94 @@
                 transferência bancária.</span
               >
               <div class="height-20"></div>
-              <div class="div-forma-content">
-                <div>
-                  <span>Banco:</span>
-                  <span>Agência: </span>
-                  <span>Conta: </span>
-                  <span>CNPJ: </span>
+
+              <div class="div-bancos">
+                <div class="div-banco">
+                  <img src="assets/bradesco.png" height="30" />
+                  <div class="div-forma-content">
+                    <div>
+                      <span>Banco:</span>
+                      <span>Agência: </span>
+                      <span>Conta: </span>
+                      <span>CNPJ: </span>
+                    </div>
+                    <div>
+                      <span>Banco Bradesco S.A. (237) </span>
+                      <span id="copy_agencia1"
+                        >3739
+                        <span
+                          class="btn_copy"
+                          onclick="copy_value('copy_agencia1')"
+                          >Copiar</span
+                        ></span
+                      >
+                      <span id="copy_conta1"
+                        >38053-9
+                        <span
+                          class="btn_copy"
+                          onclick="copy_value('copy_conta1')"
+                          >Copiar</span
+                        ></span
+                      >
+                      <span id="copy_cnpj1"
+                        >07.194.874/0001-76
+                        <span
+                          class="btn_copy"
+                          onclick="copy_value('copy_cnpj1')"
+                          >Copiar</span
+                        ></span
+                      >
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <span>Banco Bradesco S.A. (237) </span>
-                  <span id="copy_agencia"
-                    >3739
-                    <span class="btn_copy" onclick="copy_value('copy_agencia')"
-                      >Copiar</span
-                    ></span
-                  >
-                  <span id="copy_conta"
-                    >38053-9
-                    <span class="btn_copy" onclick="copy_value('copy_conta')"
-                      >Copiar</span
-                    ></span
-                  >
-                  <span id="copy_cnpj"
-                    >07.194.874/0001-76
-                    <span class="btn_copy" onclick="copy_value('copy_cnpj')"
-                      >Copiar</span
-                    ></span
-                  >
+                <div class="div-banco">
+                  <img src="assets/itau.png" height="30" />
+                  <div class="div-forma-content">
+                    <div>
+                      <span>Banco:</span>
+                      <span>Agência: </span>
+                      <span>Conta: </span>
+                      <span>CNPJ: </span>
+                    </div>
+                    <div>
+                      <span>Banco ITAÚ (341) </span>
+                      <span id="copy_agencia2"
+                        >6083
+                        <span
+                          class="btn_copy"
+                          onclick="copy_value('copy_agencia2')"
+                          >Copiar</span
+                        ></span
+                      >
+                      <span id="copy_conta2"
+                        >01544-3
+                        <span
+                          class="btn_copy"
+                          onclick="copy_value('copy_conta2')"
+                          >Copiar</span
+                        ></span
+                      >
+                      <span id="copy_cnpj2"
+                        >07.194.874/0001-76
+                        <span
+                          class="btn_copy"
+                          onclick="copy_value('copy_cnpj2')"
+                          >Copiar</span
+                        ></span
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
-
               <div class="height-20"></div>
             </div>
             <div class="divisor"></div>
             <div class="div-forma">
               <h3>PRESENCIALMENTE</h3>
               <span
-                >As caixas de oferta ficam disponíveis para oferta/dízimo antes
-                e durante os cultos. Para ofertar presencialmente, é necessário
-                reservar seu lugar e participar do culto.
+                >Para ofertar presencialmente, é necessário reservar seu lugar e
+                participar do culto. As caixas de oferta ficam disponíveis para
+                oferta/dízimo antes e durante os cultos.
               </span>
               <div class="height-20"></div>
               <div class="div-forma-content">
